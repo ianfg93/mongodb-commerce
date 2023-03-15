@@ -1,7 +1,7 @@
-db.produtos.insert({ franquia: "McDonalds",
+db.resumoProdutos.insert({ franquia: "McDonalds",
 totalProdutos: db.produtos.count({}) });
 
-db.produtos.find({ }, {
+db.resumoProdutos.find({ }, {
   franquia: 1,
   totalProdutos: 1,
   _id: false,
